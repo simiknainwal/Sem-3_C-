@@ -2,7 +2,7 @@
 using namespace std;
 
 class Test{
-    public:
+    protected:
     int a;
     Test(){
         a=0;
