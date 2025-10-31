@@ -119,6 +119,7 @@ class Base{
     protected:int b;
     public:int c;
     void input(){
+        a=30;
         b=10;
         c=45;
     }
@@ -128,12 +129,12 @@ class Child:private Base{
     public:
     void display(){
         input();
-        cout<<b<<endl<<c;
+        cout<<b<<endl<<c<<endl;
     }
 };
 
 int main(){
     Child ob;
-    // cout<<ob.b;
+    cout<<ob.b;
     ob.display();
 }
