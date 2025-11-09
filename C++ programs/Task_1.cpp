@@ -46,22 +46,27 @@
 
 // }
 
-// #include<iostream>
-// using namespace std;
+#include<iostream>
+using namespace std;
 
-// int main(){
-//     string str;
-//     getline(cin,str);
-//     // int l=str.length();
-//     int hash[256]={0};
-//     for(int i=0;i<str.length();i++){
-//         hash[str[i]-'a']++;
-//     }
-//     for(int i=0;i<str.length();i++){
-//         if(hash[str[i]-'a']!=1){
-//             str.erase(i,1);
-//             i--;
-//         }
-//     }
-//     cout<<"Updated string is "<<str;
-// }
+int main(){
+    string str;
+    getline(cin,str);
+    // int l=str.length();
+    int hash[256]={0};
+    for(int i=0;i<str.length();i++){
+        hash[str[i]-'a']++;
+    }
+    char nch[50];
+    int k=0;
+    for(int i=0;i<str.length();i++){
+        if(hash[str[i]-'a']!=1){
+            str.erase(i,1);
+            i--;
+        // nch[k++]=str[i];
+        }
+    }
+    // nch[k]='\0';
+    cout<<"Updated string is "<<str;
+    // cout<<"Updated string is "<<nch;
+}

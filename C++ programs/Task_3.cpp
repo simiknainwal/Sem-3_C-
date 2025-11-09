@@ -15,7 +15,7 @@ using namespace std;
 // int Student::calculate(){
 //         int s=0;
 //         for(int i=0;i<5;i++){
-//             s=s+scores[i];
+//             s=s+scores[i ];
 //         }
 //         return s;
 //     }
