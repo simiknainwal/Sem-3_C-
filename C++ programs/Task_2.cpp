@@ -8,30 +8,30 @@
 
 
 
-// #include<iostream>
-// using namespace std;
+#include<iostream>
+using namespace std;
 
-// class Bank{
-//     string name;int balance=50000,amount;
-//     public:
-//     void input(){
-//         getline(cin,name);
-//         cin>>amount;
-//     }
-//     int new_balance(){
-//         return balance-amount;
-//     }
-//     void display(){
-//         cout<<"Name is "<<name<<endl;
-//         cout<<"New balance is "<<new_balance();
-//     }
-// };
+class Bank{
+    string name;int balance=50000,amount;
+    public:
+    void input(){
+        getline(cin,name);
+        cin>>amount;
+    }
+    int new_balance(){
+        return balance-amount;
+    }
+    void display(){
+        cout<<"Name is "<<name<<endl;
+        cout<<"New balance is "<<new_balance();
+    }
+};
 
-// int main(){
-//     Bank ob;
-//     ob.input();
-//     ob.display();
-// }
+int main(){
+    Bank ob;
+    ob.input();
+    ob.display();
+}
 
 // #include<iostream>
 // using namespace std;

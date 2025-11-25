@@ -48,7 +48,7 @@ class Area{
     int area(int b,int c){
         return (b*c)/2;
     }
-    int area(int a,int b){
+    int area(float a,int b){
         return a*b;
     }
 };

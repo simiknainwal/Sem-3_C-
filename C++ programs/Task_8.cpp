@@ -1,55 +1,55 @@
 // //Q20
-// #include<iostream>
-// using namespace std;
-// class Total;
-// class Student{
-//     string name;
-//     int rollno;
-//     public:
-//     void setInfo(){
-//         cin>>name;
-//         cin>>rollno;
-//     }
-//     friend class Total;
-// };
+#include<iostream>
+using namespace std;
+class Total;
+class Student{
+    string name;
+    int rollno;
+    public:
+    void setInfo(){
+        cin>>name;
+        cin>>rollno;
+    }
+    friend class Total;
+};
 
-// class Marks: virtual public Student{
-//     protected:int m1,m2,m3,m4,m5;
-//     void setMarks(){
-//         cin>>m1>>m2>>m3>>m4>>m5;
-//     }
-// };
+class Marks: virtual public Student{
+    protected:int m1,m2,m3,m4,m5;
+    void setMarks(){
+        cin>>m1>>m2>>m3>>m4>>m5;
+    }
+};
 
-// class Extra:virtual public Student{
-//     protected:int sp,gp;
-//     void extra(){
-//         cin>>sp;
-//         cin>>gp;
-//     }
-// };
+class Extra:virtual public Student{
+    protected:int sp,gp;
+    void extra(){
+        cin>>sp;
+        cin>>gp;
+    }
+};
 
-// class Total:public Marks,public Extra{
-//     public:
-//     void getTotal(){
-//         cout<<"Enter name and roll no:\n";
-//         setInfo();
-//         cout<<"Enter your subject marks: \n";
-//         setMarks();
-//         cout<<"Enter your sports and GP marks:\n";
-//         extra();
-//     }
-//     void displayAll(){
-//         cout<<"Name:"<<name<<endl;
-//         cout<<"Roll No:"<<rollno<<endl;
-//         cout<<"Average marks: "<<(m1+m2+m3+m4+m5+sp+gp)/7<<endl;
-//     }
-// };
+class Total:public Marks,public Extra{
+    public:
+    void getTotal(){
+        cout<<"Enter name and roll no:\n";
+        setInfo();
+        cout<<"Enter your subject marks: \n";
+        setMarks();
+        cout<<"Enter your sports and GP marks:\n";
+        extra();
+    }
+    void displayAll(){
+        cout<<"Name:"<<name<<endl;
+        cout<<"Roll No:"<<rollno<<endl;
+        cout<<"Average marks: "<<(m1+m2+m3+m4+m5+sp+gp)/7<<endl;
+    }
+};
 
-// int main(){
-//     Total ob;
-//     ob.getTotal();
-//     ob.displayAll();
-// }
+int main(){
+    Total ob;
+    ob.getTotal();
+    ob.displayAll();
+}
 
 // //Q21
 // #include<iostream>
